@@ -77,44 +77,6 @@ int main(){
 
 
 
-	//Check state of a bit
-	std::cout << std::endl;
-	std::cout << "Checking the state of each bit position (on/off)" << std::endl;
-	std::cout << "bit0 is " << ((var & mask_bit_0) >> 0 )<< std::endl;
-    std::cout << "bit1 is " << ((var & mask_bit_1) >> 1 ) << std::endl;
-    std::cout << "bit2 is " << ((var & mask_bit_2) >> 2 ) << std::endl;
-    std::cout << "bit3 is " << ((var & mask_bit_3) >> 3 ) << std::endl;
-    std::cout << "bit4 is " << ((var & mask_bit_4) >> 4 ) << std::endl;
-    std::cout << "bit5 is " << ((var & mask_bit_5) >> 5 ) << std::endl;
-	std::cout << std::boolalpha;
-    std::cout << "bit6 is " << ((var & mask_bit_6) >> 6 ) << std::endl;
-	std::cout << "bit6 is " << static_cast<bool>(var & mask_bit_6) << std::endl;
-
-    std::cout << "bit7 is " << ((var & mask_bit_7) >> 7 ) << std::endl;
-    std::cout << "bit7 is " << static_cast<bool>(var & mask_bit_7) << std::endl;
-
-
-	//Toggle bits
-	//Toggle : var ^ mask
 	
-	//Toggle bit 0
-	std::cout << std::endl;
-	std::cout << "Toggle bit 0" << std::endl;
-    var ^= mask_bit_0;
-	std::cout << std::setw(COLUMN_WIDTH) <<  "var : "
-		 << std::setw(COLUMN_WIDTH) << std::bitset<8>(var) << std::endl;
-
-    //Toggle bit7 
-	std::cout << "Toggle bit 7" << std::endl;
-    var ^= mask_bit_7;
-	std::cout << std::setw(COLUMN_WIDTH) <<  "var : "
-		 << std::setw(COLUMN_WIDTH) << std::bitset<8>(var) << std::endl;
-
-	//Toggle multiple bits in one go : the 4 higher bits
-	std::cout << "Toggle multiple bits in one go : the 4 higher bits" << std::endl;
-    var ^= (mask_bit_7 | mask_bit_6 | mask_bit_5 | mask_bit_4);
-	std::cout << std::setw(COLUMN_WIDTH) <<  "var : "
-		 << std::setw(COLUMN_WIDTH) << std::bitset<8>(var) << std::endl;
-   
     return 0;
 }
