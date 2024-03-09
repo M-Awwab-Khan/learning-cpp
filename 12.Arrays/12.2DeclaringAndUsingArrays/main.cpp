@@ -22,6 +22,7 @@ int main(){
   
 
 
+   /*
     scores[0] = 20;
     scores[1] = 21;
     scores[2] = 22;
@@ -30,7 +31,20 @@ int main(){
     for( size_t i {0} ; i < 10 ; ++i){
         std::cout << "scores [" << i << "] : " << scores[i] << std::endl;
     }
+    */
 
 
+   //Write data in a loop
+   for(size_t i{0}; i < 10 ; ++i){
+       scores[i] = i * 10;
+   }
+
+    //Print the data out
+    for( size_t i {0} ; i < 10 ; ++i){
+        std::cout << "scores [" << i << "] : " << scores[i] << std::endl;
+    }
+
+
+   
     return 0;
 }
