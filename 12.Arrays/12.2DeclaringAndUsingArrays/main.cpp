@@ -9,15 +9,27 @@ int main(){
 
     //Read data
 
-   std:: cout << " scores [0] : " << scores[0] << std::endl;
-   std:: cout << " scores [1] : " << scores[1] << std::endl;
+   // std:: cout << " scores [0] : " << scores[0] << std::endl;
+   // std:: cout << " scores [1] : " << scores[1] << std::endl;
    
 
     //Read with a loop
+    /*
     for( size_t i {0} ; i < 10 ; ++i){
         std::cout << "scores [" << i << "] : " << scores[i] << std::endl;
     }
+    */
   
+
+
+    scores[0] = 20;
+    scores[1] = 21;
+    scores[2] = 22;
+
+    //Print the data out
+    for( size_t i {0} ; i < 10 ; ++i){
+        std::cout << "scores [" << i << "] : " << scores[i] << std::endl;
+    }
 
 
     return 0;
