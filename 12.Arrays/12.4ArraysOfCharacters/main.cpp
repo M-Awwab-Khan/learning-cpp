@@ -40,5 +40,25 @@ int main(){
     */
    
 
+ 
+    //If a character array is null terminated, it's called as C-String
+    /*
+    char message1 [] {'H','e','l','l','o','\0'};
+    std::cout << "message1 : " << message1 << std::endl;
+    std::cout << "sizeof(message1) : " << sizeof(message1) << std::endl;
+    */
+
+  
+   /*
+    char message2 [6] {'H','e','l','l','o'};
+    std::cout << "message2 : " << message2 << std::endl;
+    std::cout << "sizeof(message2) : " << sizeof(message2) << std::endl;
+
+    char message3 [] {'H','e','l','l','o'}; // This is not a c string ,
+											//as there is not null character
+    std::cout << "message3 : " << message3 << std::endl;
+    std::cout << "sizeof(message3) : " << sizeof(message3) << std::endl;
+    */
+
     return 0;
 }
