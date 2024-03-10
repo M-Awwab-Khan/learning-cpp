@@ -45,7 +45,6 @@ int main(){
 	//Compared to initialization with charactes with in '', this
 	// is even easier to type. The entire string is a single entity 
 	//you can manage easily.
-    /*
     char members1 [][name_length] {
         "John",
         "Samuel",
@@ -58,7 +57,6 @@ int main(){
     for (size_t i {0}; i < std::size(members1) ; ++i){
         std::cout << members1[i] << std::endl;
     }
-    */
    
 
 
