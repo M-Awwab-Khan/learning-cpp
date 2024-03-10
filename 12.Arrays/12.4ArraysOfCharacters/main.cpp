@@ -60,5 +60,22 @@ int main(){
     std::cout << "sizeof(message3) : " << sizeof(message3) << std::endl;
     */
 
+    
+
+    //String literal
+    /*
+    char message4 [] {"Hello"};
+    std::cout << "message4 : " << message4 << std::endl;
+    std::cout << "sizeof(message4) : " << sizeof(message4) << std::endl;
+    */
+
+
+
+    //Can't safely print out arrays other than those of characters
+    int numbers [] {1,2,3,4,5};
+    std::cout << "numbers :  " << numbers << std::endl;
+ 
+
+    
     return 0;
 }
