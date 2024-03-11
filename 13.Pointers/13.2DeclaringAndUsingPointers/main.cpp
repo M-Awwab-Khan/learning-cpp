@@ -64,6 +64,13 @@ int main(){
     //p_int = &double_var; // Compiler error
 
 
+    //Dereferencing a pointer : 
+    int* p_int2 {nullptr};
+    int int_data {56};
+    p_int2 = &int_data;
+
+    std::cout << "value : " << *p_int2 << std::endl; // Dereferencing a pointer
+
 
     return 0;
 }
