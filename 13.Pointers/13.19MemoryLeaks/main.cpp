@@ -15,7 +15,7 @@ int main(){
     */
 
 	//Double allocation 
-    
+    /*
     int *p_number1 {new int{55}};
     
 	//Use the pointer
@@ -26,7 +26,17 @@ int main(){
 
     delete p_number1;
     p_number1 = nullptr;
-   
+    */
+
+	//Nested scopes with dynamically allocated memory
+	{
+		int *p_number2 {new int{57}};
+
+        //Use the dynamic memory
+
+	}
+	//Memory with int{57} leaked.
+
     std::cout << "Program ending well" << std::endl;
     return 0;
 }
