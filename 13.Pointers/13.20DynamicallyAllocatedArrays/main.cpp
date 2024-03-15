@@ -38,5 +38,25 @@ int main(){
    delete [] p_scores;
    p_scores = nullptr;
 
+   //Static arrays Vs dynamic arrays
+   std::cout << "=====================================" << std::endl;
+
+   int scores[10] {1,2,3,4,5,6,7,8,9,10}; // Lives on the stack
+
+   std::cout << "scores size : " << std::size(scores) << std::endl;
+   for( auto s : scores){
+       std::cout << "value : " << s << std::endl;
+   }
+
+   int* p_scores1 = new int[10] {1,2,3,4,5,6,7,8,9,10}; // Lives on the heap.
+   //std::cout << "p_scores1 size : " << std::size(p_scores) << std::endl;
+   /*
+   for( auto s : p_scores1){
+       std::cout << "value : " << s << std::endl;
+   }
+   */
+
+
+   
     return 0;
 }
