@@ -46,6 +46,30 @@ int main (int argc, char *argv[]) {
         std::cout << " " << str1.at(i) ;
     }
 	std::cout << std::endl;
-    */ 
+    */
+
+  //Modifying with operator[] and at()
+    /*
+    std::string str1 {"Hello there"};
+    str1[0] = 'B';
+    str1.at(1) = 'a';
+    std::cout << "str1(modified) : " << str1 << std::endl;
+    */
+
+    //Getting the front and back characters
+    /*
+    std::string str2{"The Phoenix King"};    
+    char& front_char = str2.front();
+    char& back_char = str2.back();
+    std::cout << "The front char in str2 is : " << front_char << std::endl;
+    std::cout << "The back char in str2 is : " << back_char << std::endl;
+
+    front_char = 'r';
+    back_char = 'd';
+
+    std::cout << "str2 : " << str2 << std::endl;
+    */
+
+
   return 0;
 }
