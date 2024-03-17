@@ -69,7 +69,27 @@ int main (int argc, char *argv[]) {
 
     std::cout << "str2 : " << str2 << std::endl;
     */
+	//c_str method
+    /*
+	//doc : https://en.cppreference.com/w/cpp/string/basic_string/c_str
+	//returns const char * to the wrapped string. You shouldn't use 
+	//it to modify data in the string.
+    std::string str2{"The Phoenix King"}; 
+    const char * wrapped_c_string = str2.c_str();
+    std::cout << "Wrapped c string : " << wrapped_c_string << std::endl;
+    //wrapped_c_string[0] = 'e'; // Compiler error
+    */
 
+   //data()
+    std::string str2 { "Hello World"};
+    
+    char * data = str2.data();
+    std::cout << "Wrapped c string : " << data << std::endl;
+    
+    data[0] = 'B';// This also changes std::string.
+    
+    std::cout << "Wrapped c string (after modification) : " << data << std::endl;
+    std::cout << "Original string (after modification ) :" << str2 << std::endl;
 
   return 0;
 }
