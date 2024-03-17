@@ -130,6 +130,18 @@ int main(){
 	std::cout <<"append C-String : "  <<  std::string{"Hello "}.append( message2)<< std::endl;
 	*/
 
+  //Concatenating std::strings and numbers
+        
+	std::string str26{"Hello"};
+        
+	str26 += std::to_string(67.5f); // Treats 67 as a character code
+					// When using the += operator, C++ knows to treat the 
+					//integer operand as a character code and append that to our
+					//std::string. But what if we want the 67 appended to std::string
+					//literally
+    std::cout << "str26 : " << str26 << std::endl;
+
+
   return 0;
 
 }
