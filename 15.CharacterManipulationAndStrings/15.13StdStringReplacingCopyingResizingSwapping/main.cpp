@@ -93,6 +93,30 @@ int main(){
     std::cout << "str5.capacity() : " << str5.capacity() << std::endl;
     */
 
+
+    //Swapping
+	std::string str_a{"This is a string stored in A"};
+    std::string str_b{"This is a string stored in B and it's really great to be able to do that."};
+    
+    //Before swap
+    std::cout << "str_a : " << str_a << std::endl;
+    std::cout << "str_b : " << str_b << std::endl;
+	std::cout << "str_a.size() :" << str_a.size() << std::endl;
+	std::cout << "str_a.capaity() : " << str_a.capacity() << std::endl;
+	std::cout << "str_b.size() :" << str_b.size() << std::endl;
+	std::cout << "str_b.capaity() : " << str_b.capacity() << std::endl;
+    
+	std::cout << "Swapping..." << std::endl;
+    str_a.swap(str_b);
+    
+    //After swap
+    std::cout << "str_a : " << str_a << std::endl;
+    std::cout << "str_b : " << str_b << std::endl;
+	std::cout << "str_a.size() :" << str_a.size() << std::endl;
+	std::cout << "str_a.capaity() : " << str_a.capacity() << std::endl;
+	std::cout << "str_b.size() :" << str_b.size() << std::endl;
+	std::cout << "str_b.capaity() : " << str_b.capacity() << std::endl;
+
     
     return 0;
 }
