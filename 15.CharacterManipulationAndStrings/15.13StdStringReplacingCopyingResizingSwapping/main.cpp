@@ -52,5 +52,47 @@ int main(){
     */
 
 
+	//Resizing
+    //std::resize(
+    /*
+    std::string str5{"Hello"};
+	
+    std::cout << "null char : " << '\0' << std::endl;
+	std::cout << "str5 : " << str5 << std::endl;
+    std::cout << "str5.size() : " << str5.size() << std::endl;
+    std::cout << "str5.capacity() : " << str5.capacity() << std::endl;
+	
+	std::cout << "Resizing..." << std::endl;
+    str5.resize(8); // This fills new char place holders with
+						//null character by default, you can't print and see them
+    
+	std::cout << "str5 : " << str5 << std::endl;
+    std::cout << "str5.size() : " << str5.size() << std::endl;
+    std::cout << "str5.capacity() : " << str5.capacity() << std::endl;
+	
+	//Prove that they are indeed null characters
+    std::cout << "Printing through loop : " << std::endl;
+	for(size_t i{} ; i < str5.size() ; ++i){
+		std::cout << i << ":" << str5[i] << std::endl;
+	}
+
+
+    //Resize and specify autofill character
+    std::cout << "Resize and specify autofill character : " << std::endl;
+    str5.resize(10,'*');
+	std::cout << "str5 : " << str5 << std::endl;
+    std::cout << "str5.size() : " << str5.size() << std::endl;
+    std::cout << "str5.capacity() : " << str5.capacity() << std::endl;
+
+
+    //Resize down
+    std::cout << "Resize down : " << std::endl;
+    str5.resize(5);
+	std::cout << "str5 : " << str5 << std::endl;
+    std::cout << "str5.size() : " << str5.size() << std::endl;
+    std::cout << "str5.capacity() : " << str5.capacity() << std::endl;
+    */
+
+    
     return 0;
 }
