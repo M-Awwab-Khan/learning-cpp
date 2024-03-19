@@ -101,5 +101,24 @@ int main(){
     */
 
 
+    //Erase
+    //basic_string& erase( size_type index = 0, size_type count = npos );
+	//Starting at index index, erase count characters from the string
+    //Notice that this function returns a referennce
+    /*
+    std::string str9 {"Hello World is a message used to start off things when learning programming!"};;
+    
+    str9.erase(11,str9.size() - 12);
+	std::cout << "str9 : " << str9 << std::endl;
+	
+	//Reset str9.
+	str9 = "Hello World is a message used to start off things when learning programming!";
+	
+	//Direct print out.Because this method returns a reference to the modified string
+	std::cout << "str9 : " << str9.erase(11,str9.size() - 12) << std::endl;
+
+    */
+
+
     return 0;
 }
